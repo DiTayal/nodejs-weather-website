@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>404 Page</title>
+        <link rel='icon' href="/img/cloud.png">
+        <link rel='stylesheet' href="/css/style.css">
+        {{!--  dont use relative path.else  can cause problem, as we shift files from public to partials foler.so use absolute path wrt folder which is available to browser for rensering and that is public --}}
+    </head>
+
+    <body>
+        <div class='main-content'>
+        {{>header}}
+        {{>error}}
+        </div>
+        {{> footer}}
+
+    </body>
+</html>

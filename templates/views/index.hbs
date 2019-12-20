@@ -1,0 +1,51 @@
+<!-- name of file means that this is default page to be opened -->
+<!DOCTYPE html>
+
+<head>
+    <title>Index</title>
+    <!-- link is empty tag, ie has no closing tag -->
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+
+    {{!-- to get icon --}}
+    <link rel='icon' href="/img/cloud.png">
+    <link rel='stylesheet' href="/css/style.css">
+
+    {{!-- <script src='/js/app.js'></script>        shift before closing of body because used event handler on form and it is rendered after the js file loading --}}
+
+    <!-- <link rel='stylesheet' href="/css/style.css"> -->
+    <!-- this is absolute path starting from / and not from ./    -----also / will take root foler which is accessible to
+     web browser, ie public folder -->
+
+     <!--   JS file loaded only to index.html      -->
+</head>
+
+<body>
+    <div class='main-content'>
+            {{>header}}
+            <p>Use this site to get weather information</p>
+
+            <form>
+                <input placeholder="Location"> 
+                <button>Search</button>
+                <p id='message-1'></p>
+                <p id="message-2"></p>
+            </form>
+    </div>
+    
+    {{!-- <h1>From a static file </h1> --}}
+    {{!-- <h2>{{title}}</h2> --}}
+    {{!--   double curly braces imply data is received dynamically --}}
+    {{!-- Created by {{name}} --}}
+    {{>footer}}
+
+
+
+
+  <script src='/js/app.js'></script>
+</body>
+    </html>
+
+<!-- 
+after making this, we nned to teachexpress how to access data from public folder....for that we need to speacify absolute
+path  and not relative path   
+ -->

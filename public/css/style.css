@@ -1,0 +1,61 @@
+body{
+    color:#333333;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 650px;
+    margin:0px auto;/* 0 px is for top - bottom and auto for centering ....kitna distance from left right */
+    padding: 0px 16px;
+    /* see its effect when resize window size */
+
+    display: flex;
+    flex-direction: column; /* by default-its row */
+    /* use to fix footer to bottom-also made class amin-content */
+    min-height: 100vh;
+    /* vh means viewport heiht */
+
+}
+.main-content{
+    flex-grow: 1;
+    /* take as much space as it needs */
+}
+
+footer{
+    color: gray;    
+    border-top: 1px solid darkslategrey;
+    padding-top: 10px;
+    margin-top:15px;
+    margin-bottom: 20px;
+}
+
+header{
+    margin-top:20px;
+    margin-bottom: 30px;
+}
+
+h1{
+    font-size: 64px;
+}
+
+/* apply style to only anchor tag in header */
+header a{
+color: #888888;
+text-decoration: none;
+margin-right: 20px;
+}
+
+.portrait{
+    height: 300px;
+    width:280px;
+}
+
+input{
+    border: 1px solid darkgray;
+    padding: 10px;
+}
+button{
+    border:1px solid darkslategrey;
+    background: darkgray;
+    color: white;
+    padding: 10px ;
+    cursor: pointer;
+    
+}
