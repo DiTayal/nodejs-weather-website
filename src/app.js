@@ -13,7 +13,7 @@ const hbs=require('hbs');
 //dynamic pages created......and the  delete the html pages
 
 const app=express();
-
+const port=process.env.PORT || 3000;//first one will work on heroku and 3000 is port defined by us to be used on localhost
 
 
 //app.set('view engine','hbs')
@@ -64,7 +64,7 @@ app.get('/about',(req,res)=>{
 app.get('/help',(req,resp)=>{
     resp.render('help',{
         title:'We will help u! Share your problem!',
-        msg:'Hey we r there to help u!!!!SO jdskdjksfnjrflnjkfnmvnwkadkfmldkl;fkldfmkfk;ladmfnknfvnmc,v ,xc',
+        msg:'Hey we r there to help u!!!!So consider us your companion and ask us freely',
         name:'Dishika Tayal',
     });
 })
@@ -164,8 +164,9 @@ app.get('*',(req,res)=>{
     })
 })
 
-app.listen(3000,()=>{//starting server asynchronous process, taht will start it immediately
-console.log('server is up!');
+//app.listen(3000,()=>{//starting server asynchronous process, taht will start it immediately
+app.listen(port,()=>{//starting server asynchronous process, taht will start it immediately
+console.log('server is up on port '+port);
 });
 
 //git command has to run individually on project

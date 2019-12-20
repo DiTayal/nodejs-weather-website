@@ -44,7 +44,9 @@ weatherForm.addEventListener('submit',(e)=>{
     // console.log(location);
     // console.log('-----------------==============---------------')
 
-fetch('http://localhost:3000/weather?address='+location).then((response)=>{//in place of put boston put ! and see console in inspect
+//fetch('http://localhost:3000/weather?address='+location).then((response)=>{//in place of put boston put ! and see console in inspect
+fetch('/weather?address='+location).then((response)=>{//as we did / about in routing...so did same here as port changed
+
 response.json().then((data)=>{
     if(data.error)
     {
