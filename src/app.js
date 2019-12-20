@@ -119,6 +119,8 @@ app.get('/weather',(req,resp)=>{
 //    })
 
 
+//git command has to run individually on project
+
 
 
 })
