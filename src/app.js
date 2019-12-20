@@ -119,10 +119,6 @@ app.get('/weather',(req,resp)=>{
 //    })
 
 
-//git command has to run individually on project
-
-
-
 })
 
 //query strings work on  requests
@@ -171,3 +167,5 @@ app.get('*',(req,res)=>{
 app.listen(3000,()=>{//starting server asynchronous process, taht will start it immediately
 console.log('server is up!');
 });
+
+//git command has to run individually on project
